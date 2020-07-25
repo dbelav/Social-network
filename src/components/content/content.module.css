@@ -1,0 +1,8 @@
+.content {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  background-color: rgba(0, 255, 34, 0.623);
+  height: 1000px;
+  width: 1000px;
+}
+/*# sourceMappingURL=content.module.css.map */
