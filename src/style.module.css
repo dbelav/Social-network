@@ -11,4 +11,9 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/*# sourceMappingURL=style.css.map */
+
+.wrapper .appWrapperContent {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+/*# sourceMappingURL=style.module.css.map */

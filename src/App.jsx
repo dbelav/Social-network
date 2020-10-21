@@ -1,30 +1,28 @@
-import React from 'react';
-import Header from './components/Header/header';
-import Navbar from './components/Nav/nav';
-import Dialogs from './components/content/dialogs/dialog'
-import Profile from './components/content/profile/profile';
-import { BrowserRouter, Route } from 'react-router-dom';
-import DialogName from './components/content/dialogs/dialogName/dialogName';
-import Mar from './route';
+import React from 'react'
+import Header from './components/Header/header'
+import Navbar from './components/Nav/nav'
+import Dialog from './components/content/dialogs/dialog'
+import Profile from './components/content/profile/profile'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import s from './style.module.css'
 
-const App = () => {
+
+const App = (props) => {
+
     return (
-    //     <BrowserRouter>
-    //         <div className='wrapper'>
-    //             <Header />
-    //             <Navbar />
-    //             <div className='appWrapperContent'>
-    //                 <Route path='/profile' component={Profile} />
-    //                 <Route path='/messeges' component={Dialogs} >
-    //                     <Route path='/messeges/1' component={DialogName} />
-    //                 </Route>
+        <Router>
+            <div className={s.wrapper}>
+                <Header />
+                <Navbar />
+                <div className={s.appWrapperContent}>
+                    <Route path='/profile' render={() => <Profile state={props.state.profilePage} addPost={props.addPost}/>} />
+                    <Route path='/messeges' render={() => <Dialog state={props.state.dialogsPage} />} >
+                    </Route>
 
-    //             </div>
-    //         </div>
-    //     </BrowserRouter>
-    // );
-        <Mar />
-    )
+                </div>
+            </div>
+        </Router>
+    );
 }
 
-export default App;
+export default App; 

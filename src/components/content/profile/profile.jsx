@@ -1,14 +1,25 @@
 import React from 'react';
 import s from './profile.module.css'
-import Post from './post/post';
+import Post from './postName/post';
 
-
-const Profile = () => {
+const Profile = (props) => {
+    let userMesseges = props.state.posts.map(item => <Post name={item.name} message={item.message} />)
+    
+    let newPostItem = React.createRef()
+    let addPosts = () => {
+        let text = newPostItem.current.value
+        props.addPost(text)
+    }
     return (
         <div>
             <div className='bgimage'></div>
-            <Post name='asdasd' text='asdasd asda a'/>
-            <Post name='zxcv' text='adfa adsfdsaf '/>
+            <div>
+                <textarea ref={newPostItem}></textarea>
+            </div>
+            <div>
+                <button onClick={addPosts}>Кнопка</button>
+            </div>
+            {userMesseges}
         </div>
     );
 };

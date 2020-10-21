@@ -1,20 +1,10 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import s from './dialogName.module.css'
-import { Link } from 'react-router-dom';
-
-
 
 const DialogName = (props) => {
     return (
-        <div>
-
-                <Link to='/messeges/1'>{props.name}</Link>
-
-                {/* <NavLink to='/messeges/1'>gfhgjfhghjf</NavLink>
-                <NavLink to='/messeges/2'>hhghfghfgh</NavLink> */}
-
-        </div>
-
+        <div className={s.name}><Link to={`/messeges/` + props.name}>{props.name}</Link></div>
     );
 };
 

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "dialogMesseges.module.scss"
+    ],
+    "names": [],
+    "file": "dialogMesseges.module.css"
+}

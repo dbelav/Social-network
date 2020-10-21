@@ -1,0 +1,29 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container h1 {
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container .firstCol {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.container .secondcol {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+/*# sourceMappingURL=dialog.module.css.map */

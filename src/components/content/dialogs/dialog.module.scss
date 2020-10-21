@@ -1,0 +1,19 @@
+.container{
+    display: flex;   
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h1{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .firstCol{
+        flex-basis: 50%;
+    }
+    .secondcol{
+        flex-basis: 50%;
+    }
+
+    
+}

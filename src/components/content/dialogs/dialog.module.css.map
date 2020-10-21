@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;CAclB;;AAlBD,AAMI,UANM,CAMN,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI;CACnB;;AATL,AAUI,UAVM,CAUN,SAAS,CAAA;EACL,UAAU,EAAE,GAAG;CAClB;;AAZL,AAaI,UAbM,CAaN,UAAU,CAAA;EACN,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "dialog.module.scss"
+    ],
+    "names": [],
+    "file": "dialog.module.css"
+}

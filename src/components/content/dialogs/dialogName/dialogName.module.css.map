@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;CAClB",
     "sources": [
         "dialogName.module.scss"
     ],
